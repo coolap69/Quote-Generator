@@ -5,12 +5,11 @@ body {
   button {
   background-color: black;
   color: white;
-  position: relative;
-  left: 100px;
-  width: 100px;
+  position: absolute;
   line-height: 20px;
   text-align: center;
-    
+  width: 30%;
+  left: 36%;
   }
 
 h1 {
@@ -19,5 +18,8 @@ h1 {
   
   
   p {
-  text-align: center
+  font-family: 'Tangerine', serif;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #aaa;
 }
