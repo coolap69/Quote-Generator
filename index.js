@@ -36,15 +36,16 @@ document.getElementById("btnquotes").onclick = function() {
 
 
 
- (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
+//  (function(d, s, id) {
+//                 var js, fjs = d.getElementsByTagName(s)[0];
+//                 if (d.getElementById(id)) return;
+//                 js = d.createElement(s);
+//                 js.id = id;
+//                 js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+//                 fjs.parentNode.insertBefore(js, fjs);
+//             }(document, 'script', 'facebook-jssdk'));
+            
          
 document.getElementById("tweet").onclick = function(){
-    window.open('https://twitter.com/intent/tweet?text='+ musk.inspiration[Math.floor(Math.random() * 4)].quote + musk.inspiration[0].name);
+    window.open('https://twitter.com/intent/tweet?text='+ document.getElementById("quotes").textContent + " " + document.getElementById("author").textContent);
 }
