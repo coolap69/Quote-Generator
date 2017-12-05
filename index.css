@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-  button {
+  #btnquotes {
   background-color: black;
   color: white;
   position: absolute;
@@ -39,4 +39,14 @@ li {
 
 li a:hover {
     background-color: #111111;
+}
+
+#tweet {
+    background-color: #00aced;
+    color: white;
+}
+
+#fb-share-button {
+     background-color: #00aced;
+    color: white;
 }

@@ -1,37 +1,40 @@
+/*global $ */
+
+// https://dev.twitter.com/web/tweet-button/web-intent
+// https://fonts.google.com/
+
 var musk= {
     inspiration: [ {
         quote: "“You have to be pretty driven to make it happen. Otherwise, you will just make yourself miserable.”",
-        number: 1,
+        name: "-Elon Musk"
     },
     {
         quote: "“Life is too short for long-term grudges.”",
-        number: 2,
+        name: "-Elon Musk"
     },
     {
         quote: "“People work better when they know what the goal is and why. It is important that people look forward to coming to work in the morning and enjoy working.”",
-        number: 3,
+        name: "-Elon Musk"
     },
     {
         quote: "“Failure is an option here. If things are not failing, you are not innovating enough.”",
-        number: 4,
+        name: "-Elon Musk"
     },
     {
         quote: "“The first step is to establish that something is possible; then probability will occur.”",
-        number: 5,
-        
+        name: "-Elon Musk"        
     }
     ],
-    name: "Elon Musk"
 }
-
 
 document.getElementById("btnquotes").onclick = function() {
     console.log("click")
     var place = document.getElementById("quotes");
-        // place.innerHTML = musk.inspiration[1].quote;
-        place.innerHTML = musk.inspiration[Math.floor(Math.random() * 4)].quote;
-
+    var aPlace= document.getElementById("author");
+        place.innerHTML = musk.inspiration[Math.floor(Math.random() * 4)].quote, aPlace.innerHTML = musk.inspiration[0].name;
 };
+
+
 
  (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -41,3 +44,7 @@ document.getElementById("btnquotes").onclick = function() {
                 js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
+         
+document.getElementById("tweet").onclick = function(){
+    window.open('https://twitter.com/intent/tweet?text='+ musk.inspiration[Math.floor(Math.random() * 4)].quote + musk.inspiration[0].name);
+}

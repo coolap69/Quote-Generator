@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="jquery"></script>
     <script src="index.js" type="text/javascript" charset="utf-8" defer></script>
     <title>Elon's Quotes</title>
@@ -17,6 +18,7 @@
         </div>
         <h1>Elon Musk Quotes</h1>
         <p id="quotes"></p>
+        <p id="author"></p>
 
         <div class="goodQ">
             <button id="btnquotes">Quotes</button>
@@ -25,14 +27,18 @@
     <div class="media">
         <ul id="line">
        
-        <li><div class="fb-share-button" data-href="https://preview.c9users.io/coolap69/careerdevs-lap17/QuoteGenerator/index.html?" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpreview.c9users.io%2Fcoolap69%2Fcareerdevs-lap17%2FQuoteGenerator%2Findex.html%3F_c9_id%3Dlivepreview1%26_c9_host%3Dhttps%253A%252F%252Fide.c9.io&amp;src=sdkpreparse">Share</a></div>
+        <li><button id="fb-share-button" data-href="https://preview.c9users.io/coolap69/careerdevs-lap17/QuoteGenerator/index.html?" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpreview.c9users.io%2Fcoolap69%2Fcareerdevs-lap17%2FQuoteGenerator%2Findex.html%3F_c9_id%3Dlivepreview1%26_c9_host%3Dhttps%253A%252F%252Fide.c9.io&amp;src=sdkpreparse">Share</a></div>
 </li>
-        <li><div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" target="_blank" data-count="horizontal"></a>
+
+        <li><button id="tweet"><i class="fa fa-twitter" data-count="horizontal"></i>Tweet
+        <!--<li><div id="tweet"><a class="twitter-share-button" target="_blank" data-count="horizontal">Tweet</a>-->
      </li>
      </ul>
      </div>
      </div>
      
+ <script src="https://use.fontawesome.com/d117184189.js"></script>
+
     </body>
 
 </html>
